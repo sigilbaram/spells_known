@@ -1,0 +1,8 @@
+<package>
+    <name>spells_known</name>
+    <version>1.0</version>
+    <type>library</type>
+    <dependencies>
+        <dependency>packets</dependency>
+    </dependencies>
+</package>
