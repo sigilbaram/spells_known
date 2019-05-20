@@ -5,8 +5,7 @@ local band = bit.band
 local rshift = bit.rshift
 
 local get_flag = function(str,index)
-    local flag = band(rshift(str:byte(rshift(index, 3) + 1), band(index, 7)), 1)
-    return flag == 1
+    return band(rshift(str:byte(rshift(index, 3) + 1), band(index, 7)), 1) == 1
 end
 
 local fn_index = function(t,k)
